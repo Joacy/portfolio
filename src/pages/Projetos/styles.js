@@ -20,6 +20,7 @@ export const ProjectsList = styled.div`
     justify-content: space-between;
     text-align: center;
     width: 100%;
+    transition: all 0.3s;
   }
 
   .card:hover {

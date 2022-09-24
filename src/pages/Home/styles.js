@@ -12,15 +12,15 @@ export const ContainerUser = styled(Container)`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
     box-shadow: 4px 4px 12px 0px #051923;
     border-radius: 7.5rem;
-    margin-bottom: 0.9rem;
+    margin-bottom: 1rem;
   }
 
   img {
-    width: 15rem;
+    width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 7.5rem;
@@ -52,10 +52,11 @@ export const ContainerUser = styled(Container)`
     display: flex;
     align-items: center;
     border: 1px solid #ecf0ff;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 0.3rem;
     text-decoration: none;
     color: #ecf0ff;
+    transition: all 0.3s;
   }
 
   .links a:hover {

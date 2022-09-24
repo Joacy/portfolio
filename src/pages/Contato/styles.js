@@ -19,12 +19,12 @@ export const SocialList = styled.ul`
     color: #ecf0ff;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.3s;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 0.4rem;
     border: 1px solid #ecf0ff;
     width: 10rem;
-    height: 3rem;
+    height: 2.8rem;
+    transition: all 0.3s;
   }
 
   li a span {
@@ -75,7 +75,7 @@ export const Form = styled.form`
     justify-content: center;
     align-items: center;
     width: 10rem;
-    height: 3rem;
+    height: 2.8rem;
     padding: 0 1rem;
     border-radius: 0.4rem;
     border: 1px solid #ecf0ff;

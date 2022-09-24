@@ -9,21 +9,22 @@ export const StyledNavbar = styled(Navbar)`
   flex: 1;
   background: #051923;
   color: #ecf0ff;
-  padding: 0.7rem 0.9rem;
+  padding: 1rem 16px;
   width: 100%;
+  height: 84px;
 
   .navbar-brand {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 4rem;
+    height: 3.2rem;
     margin-right: 3rem;
     padding: 0;
   }
 
   .navbar-brand img {
     width: 100%;
-    height: 4rem;
+    height: 3.6rem;
     object-fit: contain;
     margin: 0;
     border-radius: 0.4rem;
@@ -31,7 +32,7 @@ export const StyledNavbar = styled(Navbar)`
 
   #navegacao ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     list-style: none;
@@ -41,6 +42,10 @@ export const StyledNavbar = styled(Navbar)`
 
   #navegacao ul li {
     padding: 0;
+  }
+
+  #navegacao ul li + li {
+    margin-left: 32px;
   }
 
   #navegacao ul li a {
@@ -69,6 +74,7 @@ export const StyledNavbar = styled(Navbar)`
 
     #navegacao ul li + li {
       margin-top: 0.3rem;
+      margin-left: 0;
     }
 
     #navegacao ul li {

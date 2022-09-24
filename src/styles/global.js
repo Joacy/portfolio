@@ -35,8 +35,8 @@ export default createGlobalStyle`
     }
 
     .box {
-        margin-top: 6rem;
-        margin-bottom: 3rem;
-        padding: 3rem 0;
+        margin-top: 84px;
+        margin-bottom: 36px;
+        padding: 2.4rem 0;
     }
 `;

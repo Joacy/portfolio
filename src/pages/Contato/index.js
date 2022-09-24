@@ -93,7 +93,7 @@ export default function Contato() {
                 <textarea
                   value={mensagem}
                   onChange={(e) => setMensagem(e.target.value)}
-                  rows="4"
+                  rows="5"
                   placeholder="Mensagem"
                   required
                 ></textarea>
