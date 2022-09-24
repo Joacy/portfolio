@@ -42,7 +42,7 @@ export default function Contato () {
               <SocialList>
                 <li>
                   <span>
-                    <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=+5575991183579"
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=+5575982709757"
                       target="_blank">
                       <FaWhatsapp size={20} /> <span>Whatsapp</span>
                     </a>
@@ -50,7 +50,7 @@ export default function Contato () {
                 </li>
                 <li>
                   <span>
-                    <a href="https://www.linkedin.com/in/joacy-mesquita-a886a1b5/" target="_blank">
+                    <a href="https://www.linkedin.com/in/joacymsilva/" target="_blank">
                       <FaLinkedinIn size={16} /> <span>Linkedin</span>
                     </a>
                   </span>
