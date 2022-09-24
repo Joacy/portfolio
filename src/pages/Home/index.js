@@ -1,85 +1,74 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import {
-    FaWhatsapp,
-    FaLinkedinIn,
-    FaGithub,
-} from "react-icons/fa";
+import { FaWhatsapp, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
-import api from '../../services/api';
+import api from "../../services/api";
 
-import { ContainerUser } from './styles';
+import { ContainerUser } from "./styles";
 
-function Home () {
-    const [avatarUrl, setAvatarUrl] = useState('');
-    const [name, setName] = useState('');
-    const [bio, setBio] = useState('');
-    const [location, setLocation] = useState('');
-    const [htmlUrl, sethtmlUrl] = useState('');
+function Home() {
+  const [avatarUrl, setAvatarUrl] = useState("");
+  const [name, setName] = useState("");
+  const [bio, setBio] = useState("");
+  const [location, setLocation] = useState("");
+  const [htmlUrl, sethtmlUrl] = useState("");
 
-    async function getUser () {
-        try {
-            const response = await api.get('users/Joacy');
+  async function getUser() {
+    try {
+      const response = await api.get("users/Joacy");
 
-            const { avatar_url, name, bio, location, html_url } = response.data;
+      const { avatar_url, name, bio, location, html_url } = response.data;
 
-            setAvatarUrl(avatar_url);
-            setName(name);
-            setBio(bio);
-            setLocation(location);
-            sethtmlUrl(html_url);
-        } catch (error) {
-            alert(error);
-        }
+      setAvatarUrl(avatar_url);
+      setName(name);
+      setBio(bio);
+      setLocation(location);
+      sethtmlUrl(html_url);
+    } catch (error) {
+      alert(error);
     }
+  }
 
-    useEffect(() => {
-        getUser();
-    }, []);
+  useEffect(() => {
+    getUser();
+  }, []);
 
-    return (
-        <>
-            <Header />
-            <div className="box">
-                <ContainerUser>
-                    <div className="foto">
-                        <img src={avatarUrl} alt="Joacy Mesquita da Silva" />
-                    </div>
+  return (
+    <>
+      <Header />
+      <div className="box">
+        <ContainerUser>
+          <div className="foto">
+            <img src={avatarUrl} alt="Joacy Mesquita da Silva" />
+          </div>
 
-                    <h3>{name}</h3>
+          <h3>{name}</h3>
 
-                    <h4>{bio}</h4>
+          <h4>{bio}</h4>
 
-                    <h5>{location}</h5>
+          <h5>{location}</h5>
 
-                    <div className="links">
-                        <a
-                            href={htmlUrl}
-                            target="_blank"
-                        >
-                            <FaGithub size={16} /> <span>Github</span>
-                        </a>
-                        <a
-                            href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=+5575982709757"
-                            target="_blank"
-                        >
-                            <FaWhatsapp size={20} /> <span>Whatsapp</span>
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/joacymsilva"
-                            target="_blank"
-                        >
-                            <FaLinkedinIn size={16} /> <span>Linkedin</span>
-                        </a>
-                    </div>
-                </ContainerUser>
-            </div>
-            <Footer />
-        </>
-    );
+          <div className="links">
+            <a href={htmlUrl} target="_blank">
+              <FaGithub size={16} /> <span>Github</span>
+            </a>
+
+            <a href="https://wa.me/+5575982709757" target="_blank">
+              <FaWhatsapp size={20} /> <span>Whatsapp</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/joacymsilva" target="_blank">
+              <FaLinkedinIn size={16} /> <span>Linkedin</span>
+            </a>
+          </div>
+        </ContainerUser>
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default Home;

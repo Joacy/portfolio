@@ -1,33 +1,21 @@
-import React, { useState } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
-import {
-  FaWhatsapp,
-  FaLinkedinIn,
-  FaGithub,
-} from "react-icons/fa";
+import { FaWhatsapp, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
-import {
-  SocialList,
-  Form,
-} from './styles';
+import { SocialList, Form } from "./styles";
 
-export default function Contato () {
+export default function Contato() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [assunto, setAssunto] = useState("");
+  const [mensagem, setMensagem] = useState("");
 
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [whatsapp, setWhatsapp] = useState('');
-  const [assunto, setAssunto] = useState('');
-  const [mensagem, setMensagem] = useState('');
-
-  function handleContact (e) {
+  function handleContact(e) {
     e.preventDefault();
   }
 
@@ -42,15 +30,17 @@ export default function Contato () {
               <SocialList>
                 <li>
                   <span>
-                    <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=+5575982709757"
-                      target="_blank">
+                    <a href="https://wa.me/+5575982709757" target="_blank">
                       <FaWhatsapp size={20} /> <span>Whatsapp</span>
                     </a>
                   </span>
                 </li>
                 <li>
                   <span>
-                    <a href="https://www.linkedin.com/in/joacymsilva/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/joacymsilva/"
+                      target="_blank"
+                    >
                       <FaLinkedinIn size={16} /> <span>Linkedin</span>
                     </a>
                   </span>
@@ -71,7 +61,7 @@ export default function Contato () {
                 <input
                   type="text"
                   value={nome}
-                  onChange={e => setNome(e.target.value)}
+                  onChange={(e) => setNome(e.target.value)}
                   placeholder="Nome"
                   required
                 />
@@ -79,7 +69,7 @@ export default function Contato () {
                 <input
                   type="email"
                   value={email}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
                   required
                 />
@@ -87,7 +77,7 @@ export default function Contato () {
                 <input
                   type="text"
                   value={whatsapp}
-                  onChange={e => setWhatsapp(e.target.value)}
+                  onChange={(e) => setWhatsapp(e.target.value)}
                   placeholder="Whatsapp"
                   required
                 />
@@ -95,14 +85,14 @@ export default function Contato () {
                 <input
                   type="text"
                   value={assunto}
-                  onChange={e => setAssunto(e.target.value)}
+                  onChange={(e) => setAssunto(e.target.value)}
                   placeholder="Assunto"
                   required
                 />
 
                 <textarea
                   value={mensagem}
-                  onChange={e => setMensagem(e.target.value)}
+                  onChange={(e) => setMensagem(e.target.value)}
                   rows="4"
                   placeholder="Mensagem"
                   required

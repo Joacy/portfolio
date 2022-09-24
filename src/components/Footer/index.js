@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Container } from "react-bootstrap";
 
-import { StyledFooter } from './styles';
+import { StyledFooter } from "./styles";
 
-function Footer () {
+function Footer() {
   return (
     <StyledFooter>
       <Container>
