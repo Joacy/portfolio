@@ -21,28 +21,27 @@ function Servicos() {
           <ServicesList>
             <li className="service">
               <img src={front} alt="Sites e Landing Pages" />
-              <p className="title">Desenvolvimento de Sites e Landing Pages</p>
+              <p className="title">Sites e Landing Pages</p>
               <p>
-                Desenvolvimento de Sites e Landing Pages, utilizando HTML, CSS,
-                JavaScript, Bootstrap
+                Desenvolvo Sites e Landing Pages, utilizando HTML, CSS,
+                JavaScript, Bootstrap, ReactJS
               </p>
             </li>
 
             <li className="service">
               <img src={back} alt="Sistemas Web" />
-              <p className="title">Desenvolvimento de Sistemas Web</p>
+              <p className="title">Sistemas Web</p>
               <p>
-                Desenvolvimento de Sistemas, utilizando Nodejs, Php, Vuejs,
-                Reactjs, Mongodb, Sql
+                Desenvolvo Sistemas web, utilizando Nodejs, ReactJS, Mongodb,
+                Sql
               </p>
             </li>
 
             <li className="service">
               <img src={smartphone} alt="Aplicativos" />
-              <p className="title">Desenvolvimento de Aplicativos</p>
+              <p className="title">Aplicativos</p>
               <p>
-                Desenvolvimento de Aplicativos, para Android e iOS, com React
-                Native
+                Desenvolvo Aplicativos, para Android e iOS, com React Native
               </p>
             </li>
           </ServicesList>

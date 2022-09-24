@@ -41,7 +41,7 @@ export default function Contato() {
                       href="https://www.linkedin.com/in/joacymsilva/"
                       target="_blank"
                     >
-                      <FaLinkedinIn size={16} /> <span>Linkedin</span>
+                      <FaLinkedinIn size={16} /> <span>LinkedIn</span>
                     </a>
                   </span>
                 </li>
